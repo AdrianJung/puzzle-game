@@ -18,8 +18,9 @@ export const StyledGameBoard = styled.div`
   border-radius: 6px;
   background-color: #212121;
   display: grid;
-  grid-template-rows: repeat(${(props) => props.rows}, minmax(20px, 75px));
-  grid-template-columns: repeat(${(props) => props.cols}, minmax(20px, 75px));
+  max-height: 65%;
+  grid-template-rows: repeat(${(props) => props.rows}, minmax(10px, 55px));
+  grid-template-columns: repeat(${(props) => props.cols}, minmax(10px, 55px));
   grid-gap: 5px;
 `;
 
@@ -29,8 +30,8 @@ export const StyledTile = styled.div`
   visibility: ${(props) => (props.empty ? "hidden" : "visible")};
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  padding: 20px;
+  font-size: 1.5em;
+  padding: 5px;
   background-color: rgb(250, 250, 210);
   cursor: pointer;
   border-radius: 3px;
@@ -60,7 +61,7 @@ export const StyledInput = styled.input`
 
 export const StyledButton = styled.button`
   font-size: 1.5em;
-  padding: 1.5em 3em;
+  padding: 1em 1.5em;
   background-color: #212121;
   color: rgb(250, 250, 210);
   border-radius: 4px;
