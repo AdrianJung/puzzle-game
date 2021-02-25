@@ -18,6 +18,8 @@ const generate = (cols, rows) => {
     cols
   );
 };
+
+/* Function to Generate Solution */
 const generateEasy = (cols, rows) => {
   let solution = [...Array(cols * rows).keys()].map((val, key, src) => {
     if (key === src.length - 1) {
